@@ -9,10 +9,31 @@ class Solution {
 
         System.out.println(s);
 
-        for (char ch :
-                s.) {
-            
+        int isSame = 0;
+        int isNotSame = 0;
+
+        char ch = ' ';
+
+        for (int i = 0; i < s.length(); i++) {
+
+            if (isSame == isNotSame || ch == ' ') {
+                isSame = 1;
+                isNotSame = 0;
+                ch = s.charAt(i);
+
+                answer++;
+
+                continue;
+
+            }
+
+            if (s.charAt(i) == ch)
+                isSame++;
+            else
+                isNotSame++;
+
         }
+
 
 
 

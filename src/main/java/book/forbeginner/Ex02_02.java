@@ -1,4 +1,4 @@
-package book.practice02;
+package book.forbeginner;
 
 import java.util.Scanner;
 public class Ex02_02 {

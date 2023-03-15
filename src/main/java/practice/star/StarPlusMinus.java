@@ -6,42 +6,42 @@ public class StarPlusMinus {
 
         int a = 5;
 
-        for (int i = 0; i < a * 2; i++) {
-
-            if (i < a) {
-                for (int j = 0; j < a; j++) {
-                    if (a - i <= j)
-                        System.out.printf("*");
-                    else
-                        System.out.printf(" ");
-                }
-
-            } else {
-                for (int j = a; j > 0; j--) {
-                    if (i - a < j)
-                        System.out.printf("*");
-                    else
-                        System.out.printf(" ");
-                }
-
-            }
-            System.out.printf("\n");
-        }
-
-//        >
-
 //        for (int i = 0; i < a * 2; i++) {
+//
 //            if (i < a) {
-//                for (int j = 0; j < i; j++) {
-//                    System.out.printf("*");
+//                for (int j = 0; j < a; j++) {
+//                    if (a - i <= j)
+//                        System.out.printf("*");
+//                    else
+//                        System.out.printf(" ");
 //                }
+//
 //            } else {
-//                for (int j = a; j > i - a; j--) {
-//                    System.out.printf("*");
+//                for (int j = a; j > 0; j--) {
+//                    if (i - a < j)
+//                        System.out.printf("*");
+//                    else
+//                        System.out.printf(" ");
 //                }
+//
 //            }
 //            System.out.printf("\n");
 //        }
+
+//        >
+
+        for (int i = 0; i < a * 2; i++) {
+            if (i < a) {
+                for (int j = 0; j < i; j++) {
+                    System.out.printf("*");
+                }
+            } else {
+                for (int j = a; j > i - a; j--) {
+                    System.out.printf("*");
+                }
+            }
+            System.out.printf("\n");
+        }
 
 //        int b = 7;
 //        int c = 0;

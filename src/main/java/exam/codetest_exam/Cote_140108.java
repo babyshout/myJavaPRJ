@@ -1,4 +1,4 @@
-package practice;
+package exam.codetest_exam;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,9 +33,6 @@ class Solution {
                 isNotSame++;
 
         }
-
-
-
 
         return answer;
     }

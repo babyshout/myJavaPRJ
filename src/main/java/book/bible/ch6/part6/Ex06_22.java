@@ -1,4 +1,4 @@
-package book.bible.ch6;
+package book.bible.ch6.part6;
 
 public class Ex06_22 {
 

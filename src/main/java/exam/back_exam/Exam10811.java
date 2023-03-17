@@ -15,6 +15,7 @@ public class Exam10811 {
         }
 
 
+
         int a, b, tmp;
         for (int i = 0; i < time; i++) {
             a = sc.nextInt() - 1;

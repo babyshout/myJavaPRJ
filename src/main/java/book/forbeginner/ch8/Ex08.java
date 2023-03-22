@@ -1,4 +1,4 @@
-package book.forbeginner;
+package book.forbeginner.ch8;
 
 import java.util.Scanner;
 

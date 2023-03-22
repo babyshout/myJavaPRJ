@@ -1,4 +1,4 @@
-package book.forbeginner;
+package book.forbeginner.ch3;
 
 public class Ex03_08 {
     public static void main(String[] args) {

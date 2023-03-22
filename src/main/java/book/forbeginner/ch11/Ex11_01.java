@@ -1,4 +1,4 @@
-package book.forbeginner;
+package book.forbeginner.ch11;
 
 class Car {
 

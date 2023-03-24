@@ -22,8 +22,6 @@ public class MiddleDemo {
             end = sc.nextInt();
             mid = sc.nextInt();
 
-            int a = mid - begin;
-
             for (int j = mid; j < end + 1 ; j++) {
                 count++;
                 for (int k = j - 1; k > begin - 2 + count; k--) {

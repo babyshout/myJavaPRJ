@@ -1,4 +1,4 @@
-package book.bible.ch9.part1;
+package book.bible.ch9.part1Object;
 
 public class ToStringTest {
     public static void main(String[] args) {

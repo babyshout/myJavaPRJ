@@ -1,4 +1,4 @@
-package book.bible.ch9.part2;
+package book.bible.ch9.part2String;
 
 public class StringEx5 {
     static String s1;

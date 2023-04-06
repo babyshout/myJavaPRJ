@@ -2,7 +2,7 @@ package quiz;
 
 import java.util.Scanner;
 
-public class QuizKEA0329 {
+public class Quiz0329KEA {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num;

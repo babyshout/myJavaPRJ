@@ -1,4 +1,4 @@
-package book.bible.ch9.part1;
+package book.bible.ch9.part1Object;
 
 public class HashCodeEx1 {
     public static void main(String args[]) {

@@ -1,4 +1,4 @@
-package book.bible.ch9.part1;
+package book.bible.ch9.part1Object;
 
 class Point implements Cloneable {  //Cloneable 인터페이스를 구현한 클래스에서만 clone() 을 호출할수 있다. 이 인터페이스를 구현하지 않고 clone() 을 호출하면 예외가 발생한다.
     int x;

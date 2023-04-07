@@ -1,4 +1,4 @@
-package book.bible.ch9.part3StringBuffer;
+package book.bible.ch9.part5Wrapper;
 
 public class WrapperEx3 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package demo.enumEx;
+package demo.enumEx.section1;
 
 public class EnumEx1 {
     public static final String MALE = "MALE";

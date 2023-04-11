@@ -13,7 +13,7 @@ public class EnumEx2 {
     }
 }
 
-public enum TableStatus {
+enum TableStatus {
     Y("1", true),
     N("0", false);
 

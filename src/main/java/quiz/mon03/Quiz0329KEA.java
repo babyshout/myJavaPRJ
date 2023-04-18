@@ -1,4 +1,4 @@
-package quiz;
+package quiz.mon03;
 
 import java.util.Scanner;
 

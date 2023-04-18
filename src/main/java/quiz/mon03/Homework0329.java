@@ -1,4 +1,4 @@
-package quiz;
+package quiz.mon03;
 
 public class Homework0329 {
     public static void main(String[] args) {

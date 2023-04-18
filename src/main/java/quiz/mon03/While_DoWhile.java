@@ -1,4 +1,4 @@
-package quiz;
+package quiz.mon03;
 
 public class While_DoWhile {
     public static void main(String[] args) {

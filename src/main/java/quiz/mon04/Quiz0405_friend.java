@@ -1,4 +1,4 @@
-package quiz;
+package quiz.mon04;
 
 public class Quiz0405_friend {
     public static void main(String[] args) {

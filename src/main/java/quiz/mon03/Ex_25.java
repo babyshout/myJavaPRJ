@@ -1,4 +1,4 @@
-package quiz;
+package quiz.mon03;
 
 public class Ex_25 {
     static short getNumber() {

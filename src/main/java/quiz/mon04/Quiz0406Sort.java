@@ -1,4 +1,4 @@
-package quiz;
+package quiz.mon04;
 
 import java.util.*;
 

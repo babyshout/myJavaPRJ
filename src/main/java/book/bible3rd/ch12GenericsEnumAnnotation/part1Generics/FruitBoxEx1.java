@@ -2,65 +2,38 @@ package book.bible3rd.ch12GenericsEnumAnnotation.part1Generics;
 
 import java.util.ArrayList;
 
-class Fruit1 {
-    public String toString() {
-        return "Fruit1";
-    }
-}
+class Fruit				  { public String toString() { return "Fruit";}}
+class Apple extends Fruit { public String toString() { return "Apple";}}
+class Grape extends Fruit { public String toString() { return "Grape";}}
+class Toy		          { public String toString() { return "Toy"  ;}}
 
-class Apple1 extends Fruit1 {
-    public String toString() {
-        return "Apple1";
-    }
-}
-
-class Grape1 extends Fruit1 {
-    public String toString() {
-        return "Grape1";
-    }
-}
-
-class Toy1 {
-    public String toString() {
-        return "Toy1";
-    }
-}
-
-public class FruitBoxEx1 {
+class FruitBoxEx1 {
     public static void main(String[] args) {
-        Box1<Fruit1> fruitBox1 = new Box1<Fruit1>();
-        Box1<Apple1> appleBox1 = new Box1<Apple1>();
-        Box1<Toy1> toyBox1 = new Box1<Toy1>();
-//        Box1<Grape1> grapeBox = new Box1<Apple1>();   //에러. 타입 불일치
-        fruitBox1.add(new Fruit1());
-        fruitBox1.add(new Apple1());  //OK.   void add(Fruit1 item);
-    
-        appleBox1.add(new Apple1());
-        appleBox1.add(new Apple1());
-//        appleBox1.add(new Toy1());    //에러. Box1<Apple1>에는 Apple만 담을 수 있음.
-        
-        toyBox1.add(new Toy1());
-//        toyBox1.add(new Apple1());    //에러. Box1<Toy1>에는 Apple1 만 담을 수 있음.
-    
-        System.out.println(fruitBox1);
-        System.out.println(appleBox1);
-        System.out.println(toyBox1);
-        
-    }
+        Box<Fruit> fruitBox = new Box<Fruit>();
+        Box<Apple> appleBox = new Box<Apple>();
+        Box<Toy>   toyBox   = new Box<Toy>();
+//		Box<Grape> grapeBox = new Box<Apple>(); // 에러. 타입 불일치
+
+        fruitBox.add(new Fruit());
+        fruitBox.add(new Apple()); // OK. void add(Fruit item)
+
+        appleBox.add(new Apple());
+        appleBox.add(new Apple());
+//		appleBox.add(new Toy()); // 에러. Box<Apple>에는 Apple만 담을 수 있음
+
+        toyBox.add(new Toy());
+//		toyBox.add(new Apple()); // 에러. Box<Toy>에는 Apple을 담을 수 없음
+
+        System.out.println(fruitBox);
+        System.out.println(appleBox);
+        System.out.println(toyBox);
+    }  // main의 끝
 }
 
-class Box1<T> {
-    ArrayList<T> list = new ArrayList<>();
-    void add(T item) {
-        list.add(item);
-    }
-    T get(int i) {
-        return list.get(i);
-    }
-    int size() {
-        return list.size();
-    }
-    public String toString() {
-        return list.toString();
-    }
+class Box<T> {
+    ArrayList<T> list = new ArrayList<T>();
+    void add(T item)  { list.add(item); }
+    T get(int i)      { return list.get(i); }
+    int size() { return list.size(); }
+    public String toString() { return list.toString();}
 }

@@ -7,6 +7,7 @@ class  CalendarEx5 {
         Calendar date = Calendar.getInstance();
 
         date.set(2015, 0, 31);	// 2015년 1월 31일
+//        date.set(2015, Calendar.JANUARY, 31);	// 2015년 1월 31일
         System.out.println(toString(date));
         date.roll(Calendar.MONTH, 1);
         System.out.println(toString(date));

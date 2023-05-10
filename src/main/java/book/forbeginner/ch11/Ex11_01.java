@@ -24,13 +24,13 @@ class Car {
     }
 
 
-    void speedUp(int value){
-        if (speed + value > 200)
-            speed = 200;
+    void speedUp(int speed){
+        if (this.speed + speed > 200)
+            this.speed = 200;
         else
-            speed = speed + value;
+            this.speed = this.speed + speed;
 
-        System.out.println("speed = " + speed);
+        System.out.println("speed = " + this.speed);
 
     }
 
@@ -52,7 +52,7 @@ class Car {
 }
 public class Ex11_01 {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         Car myCar1 = new Car();
         Car myCar2 = new Car();
@@ -70,9 +70,7 @@ public class Ex11_01 {
 
         myCar3.speedUp(80);
         myCar3.speedPrint();
-
-
-        return;
+        
     }
 
 }

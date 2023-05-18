@@ -1,4 +1,4 @@
-package quiz.mon04.prepareFirstExam;
+package quiz.month04.prepareFirstExam;
 
 import java.util.Scanner;
 

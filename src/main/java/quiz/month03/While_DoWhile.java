@@ -1,4 +1,4 @@
-package quiz.mon03;
+package quiz.month03;
 
 public class While_DoWhile {
     public static void main(String[] args) {

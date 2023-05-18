@@ -1,4 +1,4 @@
-package quiz.mon03;
+package quiz.month03;
 
 public class Ex_25 {
     static short getNumber() {

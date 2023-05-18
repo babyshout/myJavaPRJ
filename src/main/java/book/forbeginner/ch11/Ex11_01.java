@@ -50,6 +50,15 @@ class Car {
     }
 
 }
+
+class SuperCar extends Car {
+    
+    @Override
+    void speedUp(int value){
+        super.speedUp(value * 2);
+    }
+    
+}
 public class Ex11_01 {
 
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package quiz.mon04;
+package quiz.month04;
 
 import java.util.Scanner;
 

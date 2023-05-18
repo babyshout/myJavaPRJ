@@ -1,4 +1,4 @@
-package quiz.mon05;
+package quiz.month05;
 
 import java.util.HashSet;
 import java.util.Scanner;

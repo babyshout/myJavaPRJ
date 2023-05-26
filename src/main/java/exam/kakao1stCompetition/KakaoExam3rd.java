@@ -149,7 +149,7 @@ class VirtualMemoryPage {
 }
 
 
-public class KakaoExam3rd {
+public class KakaoExam3rd extends Object {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int cacheSize = sc.nextInt();

@@ -1,5 +1,4 @@
 package designPattern.structural.adapter;
-
 interface ILightningPhone {
     void recharge();
     void useLightning();

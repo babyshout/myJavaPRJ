@@ -1,0 +1,3 @@
+[submodule "myJavaPRJ"]
+	path = myJavaPRJ
+	url = https://github.com/babyshout/myJavaPRJ

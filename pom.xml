@@ -13,34 +13,46 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <build>
 
-<!--    <dependency>-->
-<!--&lt;!&ndash;        <groupId>com.example</groupId>&ndash;&gt;-->
-<!--        <artifactId>my-artifact</artifactId>-->
-<!--        <version>1.0-SNAPSHOT</version>-->
-<!--        <scope>runtime</scope>-->
-<!--        <systemPath>${project.basedir}/target/classes/demo/annot/withGPT/kor</systemPath>-->
-<!--    </dependency>-->
+    </build>
+        <dependencies>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>myAnnotationPRJ</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <scope>system</scope>
+                <systemPath>${project.basedir}/lib/myAnnotationPRJ-1.0-SNAPSHOT.jar</systemPath>
+            </dependency>
+        </dependencies>
+
+    <!--    <dependency>-->
+    <!--&lt;!&ndash;        <groupId>com.example</groupId>&ndash;&gt;-->
+    <!--        <artifactId>my-artifact</artifactId>-->
+    <!--        <version>1.0-SNAPSHOT</version>-->
+    <!--        <scope>runtime</scope>-->
+    <!--        <systemPath>${project.basedir}/target/classes/demo/annot/withGPT/kor</systemPath>-->
+    <!--    </dependency>-->
 
 
     <!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                <version>3.8.1</version>-->
-<!--                <configuration>-->
-<!--                    <annotationProcessorPaths>-->
-<!--                        <path>-->
-<!--                            <groupId>demo.annot.withGPT.kor</groupId>-->
-<!--                            <artifactId>myJavaPRJ</artifactId>-->
-<!--                            <version>1.18.20</version>-->
-<!--                        </path>-->
-<!--                    </annotationProcessorPaths>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
+    <!--        <plugins>-->
+    <!--            <plugin>-->
+    <!--                <groupId>org.apache.maven.plugins</groupId>-->
+    <!--                <artifactId>maven-compiler-plugin</artifactId>-->
+    <!--                <version>3.8.1</version>-->
+    <!--                <configuration>-->
+    <!--                    <annotationProcessorPaths>-->
+    <!--                        <path>-->
+    <!--                            <groupId>demo.annot.withGPT.kor</groupId>-->
+    <!--                            <artifactId>myJavaPRJ</artifactId>-->
+    <!--                            <version>1.18.20</version>-->
+    <!--                        </path>-->
+    <!--                    </annotationProcessorPaths>-->
+    <!--                </configuration>-->
+    <!--            </plugin>-->
+    <!--        </plugins>-->
+    <!--    </build>-->
 
 
 </project>

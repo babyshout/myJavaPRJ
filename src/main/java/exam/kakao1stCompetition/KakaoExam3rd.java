@@ -149,15 +149,11 @@ class VirtualMemoryPage {
 }
 
 
-public class KakaoExam3rd extends Object {
-    public static void main(String[] args) {
+public class KakaoExam3rd {
+    
+    public String[] adjustInputCities(String input) {
         Scanner sc = new Scanner(System.in);
-        int cacheSize = sc.nextInt();
-        VirtualMemoryPage page = new VirtualMemoryPage(cacheSize);
-        
-        String[] cities = {"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"};
-        
-        String input = sc.nextLine();
+        input = sc.nextLine();
         
         input = input.replace("[", "");
         input = input.replace("]", "");
@@ -169,11 +165,37 @@ public class KakaoExam3rd extends Object {
         input = input.replace("\t", "");
         System.out.println(input);
         
-        cities = input.split(", ");
-        
-        for (int i = 0; i < cities.length; i++) {
-            cities[i] = cities[i].replace(" ", "");
+        String output[] = input.split(", ");
+        for (int i = 0; i < output.length; i++) {
+            output[i] = output[i].replace(" ", "");
         }
+        
+        return output;
+    }
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int cacheSize = sc.nextInt();
+        VirtualMemoryPage page = new VirtualMemoryPage(cacheSize);
+        
+        String[] cities = {"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"};
+        
+        String input = sc.nextLine();
+        
+//        input = input.replace("[", "");
+//        input = input.replace("]", "");
+//        System.out.println(input);
+//        input = input.replace("“", "");
+//        System.out.println(input);
+//        input = input.replace("”", "");
+//        System.out.println(input);
+//        input = input.replace("\t", "");
+//        System.out.println(input);
+        
+        KakaoExam3rd myMain = new KakaoExam3rd();
+        
+        cities = myMain.adjustInputCities(input);
+        
         
         System.out.println("cities : " + Arrays.toString(cities));
         

@@ -1,4 +1,4 @@
-package designPattern.structural;
+package designPattern.structural.facade;
 
 
 // 서브시스템 클래스들

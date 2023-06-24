@@ -1,4 +1,4 @@
-package designPattern.construct;
+package designPattern.construct.Singleton;
 
 class Singleton {
     private static Singleton singleton = new Singleton();

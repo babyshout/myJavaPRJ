@@ -1,11 +1,12 @@
 package practice.final_exam;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ListSort {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
+        
+        Set<Integer> set = new HashSet<>();
         
         list.add(5);
         list.add(3);
@@ -15,6 +16,10 @@ public class ListSort {
         list.add(4);
         
         System.out.println(list);
+        
+        Collections.sort(list);
+        
+        int a = (int) (1.5 + 2.5);
         
         int index;
         

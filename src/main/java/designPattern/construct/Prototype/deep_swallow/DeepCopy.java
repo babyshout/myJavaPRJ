@@ -1,20 +1,26 @@
 package designPattern.construct.Prototype.deep_swallow;
 
-class PersonSwallow implements Cloneable {
+class PersonDeep implements Cloneable {
     private String name;
     private AddressDeep address;
     
-    public PersonSwallow(String name, AddressDeep address) {
+    public PersonDeep(String name, AddressDeep address) {
         this.name = name;
         this.address = address;
     }
     
-    // clone() 메서드 오버라이딩 (얕은 복제)
+    // clone() 메서드 오버라이딩 (깊은 복제)
     @Override
-    public PersonSwallow clone() {
+    public PersonDeep clone() {
         try {
-            return (PersonSwallow) super.clone();
+            PersonDeep clonedPerson = (PersonDeep) super.clone();
+            clonedPerson.address = this.address.clone();
+            // String 은 class 이기 때문에
+            // clone()메서드 사용시 얕은 복제로 인해 같은 객체를 참조하게됨
+            clonedPerson.setName(new String(this.name));
+            return clonedPerson;
         } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
             return null;
         }
     }
@@ -36,11 +42,21 @@ class PersonSwallow implements Cloneable {
     }
 }
 
-class Address {
+class AddressDeep implements Cloneable {
     private String city;
     
-    public Address(String city) {
+    public AddressDeep(String city) {
         this.city = city;
+    }
+    
+    // clone() 메서드 오버라이딩 (깊은 복제)
+    @Override
+    public AddressDeep clone() {
+        try {
+            return (AddressDeep) super.clone();
+        } catch (CloneNotSupportedException e) {
+            return null;
+        }
     }
     
     public void setCity(String city) {
@@ -52,10 +68,10 @@ class Address {
     }
 }
 
-public class SwallowCopy {
+public class DeepCopy {
     public static void main(String[] args) {
-        PersonSwallow person1 = new PersonSwallow("Alice", new AddressDeep("New York"));
-        PersonSwallow person2 = person1.clone();
+        PersonDeep person1 = new PersonDeep("Alice", new AddressDeep("New York"));
+        PersonDeep person2 = person1.clone();
 
 // person1과 person2는 같은 객체를 참조하는가?
         System.out.println(person1 == person2); // 출력 결과: false
@@ -63,7 +79,8 @@ public class SwallowCopy {
 // person1의 String(name)과 person2의 String(name)은 같은객체인가?
         System.out.println(person1.getName() == person2.getName()); // 출력 결과: true
 
+
 // person1과 person2의 주소가 같은가?
-        System.out.println(person1.getAddress() == person2.getAddress()); // 출력 결과: true
+        System.out.println(person1.getAddress() == person2.getAddress()); // 출력 결과: false
     }
 }

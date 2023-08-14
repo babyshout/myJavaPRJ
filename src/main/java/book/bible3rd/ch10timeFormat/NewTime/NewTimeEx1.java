@@ -3,7 +3,7 @@ package book.bible3rd.ch10timeFormat.NewTime;
 import java.time.*;
 import java.time.temporal.*;
 
-class NewTimeEx1 {
+public class NewTimeEx1 {
     public static void main(String[] args) {
         LocalDate today = LocalDate.now(); // 오늘의 날짜
         LocalTime now = LocalTime.now();  // 현재 시간

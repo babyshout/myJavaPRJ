@@ -3,7 +3,7 @@ package book.bible3rd.ch10timeFormat.ChoiceFormat;
 import java.util.*;
 import java.text.*;
 
-class n {
+class ChoiceFormatEx1 {
     public static void main(String[] args) {
         double[] limits = {60, 70, 80, 90};    // 낮은 값부터 큰 값의 순서로 적어야한다.
         // limits, grades 간의 순서와 개수를 맞추어야 한다.

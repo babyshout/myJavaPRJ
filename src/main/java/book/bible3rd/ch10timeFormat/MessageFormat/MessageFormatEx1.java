@@ -1,6 +1,5 @@
 package book.bible3rd.ch10timeFormat.MessageFormat;
 
-import java.util.*;
 import java.text.*;
 
 class MessageFormatEx1 {
